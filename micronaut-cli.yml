@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: com.ringcentral
+testFramework: junit
+sourceLanguage: java
+buildTool: gradle
+features: [annotation-api, app-name, graalvm, gradle, http-client, jackson-databind, java, java-application, junit, logback, micronaut-build, netty-server, reactor, reactor-http-client, readme, security-annotations, security-jwt, security-oauth2, shade, views-thymeleaf, yaml]

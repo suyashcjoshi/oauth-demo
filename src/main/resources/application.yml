@@ -1,0 +1,22 @@
+micronaut:
+  application:
+    name: oauthDemo
+  security:
+    authentication: cookie
+    token:
+      jwt:
+        signatures:
+          secret:
+            generator:
+              secret: '"${JWT_GENERATOR_SIGNATURE_SECRET:pleaseChangeThisSecretForANewOne}"'
+    oauth2:
+      clients:
+        default:
+          client-id: ${OAUTH_CLIENT_ID}
+          client-secret: ${OAUTH_CLIENT_SECRET}
+          openid:
+            issuer: ${OAUTH_ISSUER}
+netty:
+  default:
+    allocator:
+      max-order: 3
